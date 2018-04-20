@@ -46,7 +46,7 @@ As a matter of conclusion, we send combination to the robot by ROS.
 	3) Connect a drive (Fat 32) and flash your SD Card 
 - Active WiFi and connect the GoPro to the Raspberry (if you use a USB Camera, don't forget to install the drive) 
 - Open terminal (***alt+ctrl+t***):
-	1) Install ROS (see ***install*** section)
+	1) Install ROS (see [install](software/ros/install.md))
 	2) Import this repo from github : 
 	3) Go to "codes" folder: 
 		```
