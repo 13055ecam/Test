@@ -38,12 +38,7 @@ As a matter of conclusion, we send combination to the robot by ROS.
 - No pins required  
 
 #### Setup 
-- Download last version Ubuntu mate (16.04) or an another distribution for the raspberry which is compatible with ROS.
-(https://www.raspberrypi.org/downloads/)
-- To install the distribution : 
-	1) Open Etcher
-	2) Select your image previously downloaded 
-	3) Connect a drive (Fat 32) and flash your SD Card 
+- Download last version Ubuntu mate (16.04) or an another distribution for the raspberry (see [install](ros/install.md))
 - Active WiFi and open terminal (***alt+ctrl+t***):
 	1) Install ROS (see [install](ros/install.md))
 	2) Import this repo from github 
