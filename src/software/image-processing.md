@@ -46,24 +46,21 @@ As a matter of conclusion, we send combination to the robot by ROS.
 	3) Connect a drive (Fat 32) and flash your SD Card 
 - Active WiFi and connect the GoPro to the Raspberry (if you use a USB Camera, don't forget to install the drive) 
 - Open terminal (***alt+ctrl+t***):
-	1) Install ROS by following this tutorial (see ROS chapter)
-	2) Import the repos from github : 
-		``` 
-		git clone https://github.com/13055ecam/Color-detection-module
+	1) Install ROS (see install section)
+	2) Import this repo from github : 
+	3) Go to "codes" folder: 
 		```
-	3) Go to "Color-detection-module" folder: 
+		cd src/codes/software/image-processing/tests
 		```
-		cd Color-detection-module 
+	4) For testing the camera, go to "test camera" folder : 
 		```
-	4) For testing the camera, go to "test" folder : 
-		```
-		cd test
+		cd test_camera
 		```
 		- For GoPro: 
 		```
 		python3 go_pro_test.py
 		``` 
-		Note:don't forget to connect the GoPro WiFi to the raspberry Pi !
+		Note: don't forget to connect the GoPro WiFi to the raspberry Pi !
 		- For the webcam: 
 		```
 		python webcam_test.py
@@ -72,8 +69,7 @@ As a matter of conclusion, we send combination to the robot by ROS.
 **Scripts**
 - Go to color_detection folder :
 ```
-cd ... 
-cd color_detection
+cd ../test_color_detection
 ```
 - Open GP_combination.sh :
 ```
@@ -83,9 +79,9 @@ nano GP_combination.sh
 ```
 nmcli c up "your GoPro wifi"
 ```
-- Change ***line6*** with the name of WiFi
+- Change ***line6*** with the name of robot WiFi 
 ```
-nmcli c up "your main wifi"
+nmcli c up "your wifi robot"
 ```
 and save it (***ctrl+x***)
 - Run this script on the terminal : 
