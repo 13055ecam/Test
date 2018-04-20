@@ -83,7 +83,8 @@ nmcli c up "your GoPro wifi"
 ```
 nmcli c up "your wifi robot"
 ```
-and save it (***ctrl+x***)
+save it (***ctrl+x***)
+
 - Run this script on the terminal : 
 ```
 bash GP_combination.sh 
