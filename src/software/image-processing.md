@@ -60,7 +60,8 @@ As a matter of conclusion, we send combination to the robot by ROS.
 		```
 		python3 go_pro_test.py
 		``` 
-		Note: don't forget to connect the GoPro WiFi to the raspberry Pi !
+		***Don't forget to connect the GoPro WiFi to the raspberry Pi !***
+		
 		- For the webcam: 
 		```
 		python webcam_test.py
@@ -128,7 +129,7 @@ roslaunch test4 test.launch
 ```` 
 rostopic echo /color_seq 
 ````
-Note : don't forget to change frames positions and color ranges !
+***Don't forget to change frames positions and color ranges !***
 ### Bonus : flashlight module
 
 #### Aim
