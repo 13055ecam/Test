@@ -25,7 +25,7 @@ However, we have implemented in our program the different possible combinations 
 
 As a matter of conclusion, we send combination to the robot by ROS. 
 
-![z](../src/img/software/image-processing/image1.png)
+![z](../img/software/image-processing/image1.png)
 #### Bill of materials: 
 
 - One Raspberry Pi zero W
