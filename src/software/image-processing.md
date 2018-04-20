@@ -125,7 +125,7 @@ roslaunch test4 test.launch
 rostopic echo /color_seq 
 ````
 ***Don't forget to change frames positions and color ranges !***
-### Bonus : flashlight module
+### Flashlight module
 
 #### Aim
 
@@ -142,7 +142,7 @@ We added a LED flashlight above the camera because light is an important factor 
 We use pin 4 of the raspberry Pi zero to power the gate pin of IRF520 mosfet in order to control the light. The board is powered with a 5V power supply from the battery (pin 2 = 5V and pin 6= GND).
 
 #### Setup 
-- Run the code on the terminal: 
+- for testing the flashlight, run :  
 ```
 python flashlight.py
 ```
