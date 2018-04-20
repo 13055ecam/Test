@@ -38,20 +38,15 @@ As a matter of conclusion, we send combination to the robot by ROS.
 - No pins required  
 
 #### Setup 
-- Download last version Ubuntu mate (16.04) or an another distribution for the raspberry which is compatible with ROS.
-(https://www.raspberrypi.org/downloads/)
-- To install the distribution : 
-	1) Open Etcher
-	2) Select your image previously
-	3) Connect a drive (Fat 32) and flash your SD Card 
-- Active WiFi and connect the GoPro to the Raspberry (if you use a USB Camera, don't forget to install the drive) 
-- Open terminal (***alt+ctrl+t***):
+- Download last version Ubuntu mate (16.04) or an another distribution for the raspberry (see [install](ros/install.md))
+- Active WiFi and open terminal (***alt+ctrl+t***):
 	1) Install ROS (see [install](ros/install.md))
-	2) Import this repo from github : 
+	2) Import this repo from github 
 	3) Go to "codes" folder: 
 		```
 		cd src/codes/software/image-processing/tests
 		```
+	4) Connect the GoPro or your webcam to the Raspberry
 	4) For testing the camera, go to "test camera" folder : 
 		```
 		cd test_camera
@@ -60,7 +55,8 @@ As a matter of conclusion, we send combination to the robot by ROS.
 		```
 		python3 go_pro_test.py
 		``` 
-		Note: don't forget to connect the GoPro WiFi to the raspberry Pi !
+		***Don't forget to connect the GoPro WiFi to the raspberry Pi !***
+		
 		- For the webcam: 
 		```
 		python webcam_test.py
@@ -83,7 +79,8 @@ nmcli c up "your GoPro wifi"
 ```
 nmcli c up "your wifi robot"
 ```
-and save it (***ctrl+x***)
+save it (***ctrl+x***)
+
 - Run this script on the terminal : 
 ```
 bash GP_combination.sh 
@@ -127,8 +124,8 @@ roslaunch test4 test.launch
 ```` 
 rostopic echo /color_seq 
 ````
-Note : don't forget to change frames positions and color ranges !
-### Bonus : flashlight module
+***Don't forget to change frames positions and color ranges !***
+### Flashlight module
 
 #### Aim
 
@@ -145,7 +142,7 @@ We added a LED flashlight above the camera because light is an important factor 
 We use pin 4 of the raspberry Pi zero to power the gate pin of IRF520 mosfet in order to control the light. The board is powered with a 5V power supply from the battery (pin 2 = 5V and pin 6= GND).
 
 #### Setup 
-- Run the code on the terminal: 
+- for testing the flashlight, run :  
 ```
 python flashlight.py
 ```
