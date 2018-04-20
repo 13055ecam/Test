@@ -42,16 +42,16 @@ As a matter of conclusion, we send combination to the robot by ROS.
 (https://www.raspberrypi.org/downloads/)
 - To install the distribution : 
 	1) Open Etcher
-	2) Select your image previously
+	2) Select your image previously downloaded 
 	3) Connect a drive (Fat 32) and flash your SD Card 
-- Active WiFi and connect the GoPro to the Raspberry (if you use a USB Camera, don't forget to install the drive) 
-- Open terminal (***alt+ctrl+t***):
+- Active WiFi and open terminal (***alt+ctrl+t***):
 	1) Install ROS (see [install](ros/install.md))
 	2) Import this repo from github 
 	3) Go to "codes" folder: 
 		```
 		cd src/codes/software/image-processing/tests
 		```
+	4) Connect the GoPro or your webcam to the Raspberry
 	4) For testing the camera, go to "test camera" folder : 
 		```
 		cd test_camera
