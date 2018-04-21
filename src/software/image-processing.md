@@ -117,6 +117,7 @@ Note : xmin is the left side of the square, xmax is the right side of the square
 You use ***ROS*** to send the color combination to another robot module :
 - Open terminal and launch ROS : 
 ````
+. ~/eurobot_ws/devel/setup.bash
 roslaunch test4 test.launch 
 ```` 
 - Open a new tab (***ctrl+shift+t***) and display messages published to a topic : 
